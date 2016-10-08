@@ -1,0 +1,154 @@
+/*
+Javascript-video-scrubber Demo
+Created by Gary Hepting and the Dev Team at Emerge Interactive
+Fork, follow and watch on Github at https://github.com/ghepting/javascript-video-scrubber
+Visit Emerge Interctive at http://emergeinteractive.com/
+*/
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	min-height:3500px;
+}
+div.code {
+	background:rgba(0,0,0,0.65);
+	padding:.5em 2em;
+
+}
+pre {
+	font-size:12px;
+	font-family:Courier;
+	text-shadow:none;
+	overflow:auto;
+}
+a, a:link, a:visited {
+	color:#eee;
+	text-decoration:none;
+	border-bottom:1px dotted #eee;
+}
+a:hover, a:focus, a:active {
+	color:#fff;
+	text-decoration:none;
+	border-bottom:1px dotted #fff;
+}
+a.button, a.button:link, a.button:visited {
+	display: inline-block;
+	margin-right:0.5em;
+	height: 31px;
+	padding: 0 0 0 3px;
+	font-family: Helvetica,arial,freesans,clean,sans-serif;
+	font-size: 21px;
+	font-weight: bold;
+	color: #333;
+	text-shadow: 1px 1px 0 #fff;
+	white-space: nowrap;
+	border: 1px solid #d4d4d4;
+	border-radius: 6px;
+	background: #f4f4f4;
+	background: -moz-linear-gradient(#f4f4f4,#ececec);
+	background: -webkit-linear-gradient(#f4f4f4,#ececec);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4f4f4',endColorstr='#ececec')";
+	cursor: pointer;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	text-decoration:none;
+}
+a.button:hover, a.button:focus {
+	color: #fff;
+	text-decoration: none;
+	text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+	border-color: #518cc6;
+	border-bottom-color: #2a65a0;
+	background: #599bdc;
+	background: -moz-linear-gradient(#599bdc,#3072b3);
+	background: -webkit-linear-gradient(#599bdc,#3072b3);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bdc',endColorstr='#3072b3')";
+}
+
+img#video {
+	position:fixed;
+	z-index:1;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+#overlay {
+	position:fixed;
+	z-index:2;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:url('./images/grid_overlay.png');
+}
+#content {
+	position:relative;
+	z-index:2;
+	width:100%;
+}
+/* -------------------------------- */
+/* -------------------------------- */
+/* -------------------------------- */
+/* -------------------------------- */
+
+
+
+.box1 {
+  background-color: rgba(255, 200, 255, 0.8);
+}
+.box2 {
+  background-color: rgba(255, 255, 200, 0.8);
+}
+.box3 {
+  background-color: rgba(200, 255, 255, 0.8);
+}
+
+.boxDefault {
+  width: 300px;
+  margin: 30px;
+  position: fixed;
+  -webkit-box-shadow: 0 0 20px 0 #000000;
+  box-shadow: 0 0 20px 0 #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+}
+.hideBox {
+  display: none;
+}
+.showBox {
+  display: block;
+}
+
+
+h1 {
+  font-size: 15px;
+  line-height: 15px;
+  box-shadow: none;
+  color: #666;
+}
+p {
+  font-size: 12px;
+  line-height: 12px;
+  box-shadow: none;
+  color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------- */
